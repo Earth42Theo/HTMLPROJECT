@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="SULA, TIMOTHY ADAM C.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/40aed49a77.js" crossorigin="anonymous"></script>
+    <title>Welcome to My Life</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #FFC8BF, #AF5047);
+            font-family: 'Arial', sans-serif;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2px;
+            background-color: #AF5047;
+            padding: 50px;
+            margin-bottom: 20px;
+        }
+
+
+        header h1 {
+            font-weight: bold;
+            background: linear-gradient(135deg, #000000, #000000);
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .video-container {
+            margin-bottom: 10px;
+        }
+
+        .video-container video {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 15px;
+        }
+
+        .container {
+            max-width: 900px;
+            padding: 30px;
+            background-color: #fffafa;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .links a {
+            font-size: 22px;
+            color: #000000;
+            text-decoration: none;
+            padding: 14px 28px;
+            border: 2px solid #000000;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #FFC8BF, #AF5047);
+            transition: all 0.3s ease-in-out;
+            width: 200px;
+            display: inline-block;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .links a:hover {
+            background: linear-gradient(135deg, #AF5047, #FFC8BF);
+            color: #FFF4F0;
+            border-color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>WELCOME TO MY LIFE</h1>
+    </header>
+
+    <div class="video-container">
+        <video controls>
+            <source src="introductionvideo.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="container">
+        <section>
+            <h2>Explore</h2>
+            <div class="links">
+                <a href="resume.html">Resume <i class="fa-solid fa-file"></i></a>
+                <a href="skills.html">Skills <i class="fa-solid fa-kitchen-set"></i></a>
+                <a href="contacts.html">Contacts <i class="fa-solid fa-phone"></i></a>
+                <a href="biography.html">Biography <i class="fa-solid fa-book"></i></a>
+                <a href="photogallery.html">Photo Gallery<i class="fa-solid fa-image"></i></a>
+                <a href="mybeat.html">My beat and my favorite films <i class="fa-solid fa-film"></i></a>
+
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

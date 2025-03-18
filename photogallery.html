@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery Dump</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #FFC8BF, #AF5047);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            margin: 20px 0;
+            font-size: 36px;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        a {
+            font-size: 18px;
+            color: #000000;
+            text-decoration: none;
+            padding: 12px 24px;
+            border: 2px solid #000000;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #FFC8BF, #AF5047);
+            transition: all 0.3s ease-in-out;
+            width: 200px;
+            text-align: center;
+            font-weight: bold;
+        }
+        a:hover {
+            background: linear-gradient(135deg, #AF5047, #FFC8BF);
+            color: #FFF4F0;
+            border-color: #000000;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        .gallery-item::after {
+            content: attr(data-description);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            font-size: 14px;
+            text-align: center;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery-item:hover::after {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <h1>Photo Gallery Dump</h1>
+    <div>
+        <br>
+        <a href="index.html">Resume <i class="fa-solid fa-file"></i></a>
+        <a href="resume.html">Resume <i class="fa-solid fa-file"></i></a>
+        <a href="skills.html">Skills <i class="fa-solid fa-kitchen-set"></i></a>
+        <a href="contacts.html">Contacts <i class="fa-solid fa-phone"></i></a>
+        <a href="biography.html">Biography <i class="fa-solid fa-book"></i></a>
+        <a href="mybeat.html">My interests <i class="fa-solid fa-book"></i></a>
+
+        <br>
+        <br>
+        <br>
+    </div>
+    
+    <div class="gallery">
+        <div class="gallery-item" data-description="Beautiful Sunset">
+            <img src="photogallery/sunset.jpg" alt="Sunset">
+        </div>
+        <div class="gallery-item" data-description="Mountain View">
+            <img src="photogallery/mountain.jpg" alt="Mountain">
+        </div>
+        <div class="gallery-item" data-description="City Lights">
+            <img src="photogallery/city.jpg" alt="City">
+        </div>
+        <div class="gallery-item" data-description="Ocean Waves">
+            <img src="photogallery/ocean.jpg" alt="Ocean">
+        </div>
+        <div class="gallery-item" data-description="Lush Forest">
+            <img src="photogallery/forest.jpg" alt="Forest">
+        </div>
+        <div class="gallery-item" data-description="Snowy Mountains">
+            <img src="photogallery/snow.jpg" alt="Snow">
+        </div>
+        <div class="gallery-item" data-description="Wildlife">
+            <img src="photogallery/wildlife.jpg" alt="Wildlife">
+        </div>
+        <div class="gallery-item" data-description="Desert Dunes">
+            <img src="photogallery/desert.jpg" alt="Desert">
+        </div>
+        <div class="gallery-item" data-description="Flower Garden">
+            <img src="photogallery/flowers.jpg" alt="Flowers">
+        </div>
+        <div class="gallery-item" data-description="Waterfall">
+            <img src="photogallery/waterfall.jpg" alt="Waterfall">
+        </div>
+        <div class="gallery-item" data-description="Old Architecture">
+            <img src="photogallery/architecture.jfif" alt="Architecture">
+        </div>
+        <div class="gallery-item" data-description="Camping Site">
+            <img src="photogallery/camping.jpg" alt="Camping">
+        </div>
+        <div class="gallery-item" data-description="Sunrise View">
+            <img src="photogallery/sunrise.jpg" alt="Sunrise">
+        </div>
+        <div class="gallery-item" data-description="Aerial Beach View">
+            <img src="photogallery/beach.jpg" alt="Beach">
+        </div>
+        <div class="gallery-item" data-description="Starry Night Sky">
+            <img src="photogallery/stars.jpg" alt="Stars">
+        </div>
+        <div class="gallery-item" data-description="Colorful Balloons">
+            <img src="photogallery/balloons.jpg" alt="Balloons">
+        </div>
+        <div class="gallery-item" data-description="City Skyline">
+            <img src="photogallery/nissanskyline.jfif" alt="Skyline">
+        </div>
+        <div class="gallery-item" data-description="Northern Lights">
+            <img src="photogallery/aurora.jpg" alt="Aurora">
+        </div>
+        <div class="gallery-item" data-description="Road Trip">
+            <img src="photogallery/road.jpg" alt="Road">
+        </div>
+        <div class="gallery-item" data-description="Hiking">
+            <img src="photogallery/hiking.jfif" alt="Hiking">
+        </div>
+    </div>
+</body>
+</html>
